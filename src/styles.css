@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+
+  --color-paper: #f3efe6;
+  --color-paper-2: #e7e1d4;
+  --color-card: #faf7f1;
+  --color-ink: #1c1915;
+  --color-ink-soft: #5c564c;
+  --color-line: #d9d1c3;
+  --color-accent: #9c4221;
+  --color-accent-fg: #fff8f3;
+
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+    --color-paper: #141311;
+    --color-paper-2: #221f1b;
+    --color-card: #1c1a17;
+    --color-ink: #f3efe6;
+    --color-ink-soft: #b7afa3;
+    --color-line: #34302a;
+    --color-accent: #e08a5d;
+    --color-accent-fg: #1c1915;
+  }
+
+  html,
+  body {
+    min-height: 100%;
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-accent) 28%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@utility card-shadow {
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-ink) 8%, transparent),
+    0 1px 2px color-mix(in srgb, var(--color-ink) 4%, transparent);
+}

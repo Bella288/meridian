@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Meridian",
+      "hasCanvas": false,
+      "bodyTextLen": 460,
+      "bodyTextHash": "22db8d2fd5d11218bc81eb311fc363ee17fc234c164d2305675afafb393b9629",
+      "bodyTextPrefix": "Meridian Today Event October 2026 Day Week Month CALENDARS Studi",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Meridian",
+      "hasCanvas": false,
+      "bodyTextLen": 366,
+      "bodyTextHash": "61a1d777fb56dd04f217ae5d5a143894db0e1665287021d32f501fbfb2589fb3",
+      "bodyTextPrefix": "Meridian Today Event October 2026 Day Week Month Sun Mon Tue Wed",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND NOTE: no custom public/og.jpg — the platform will serve the og.grok.me placeholder. Custom cards are the default for games of every kind (DOM board/word games included), whimsical apps, creative tools, and brand-forward pages — only plain utilities (converters, CRUD trackers, admin dashboards) keep the placeholder. If this app is not a plain utility, finish the brand-asset pass per /workspace/.grok/skills/og/SKILL.md."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
